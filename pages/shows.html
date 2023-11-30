@@ -3,103 +3,143 @@
 <!--HEAD = ALOJAMIENTO DE METATAGS Y LINKS A LIBRERÍAS Y ESTILOS-->
 
 <head>
-    <!--METAS SEO-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <!--METAS SEO-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
 
 
-    <!--TÍTULO DEL DOCUMENTO-->
-    <title>Shows</title>
+  <!--TÍTULO DEL DOCUMENTO-->
+  <title>Shows</title>
 </head>
 
 <body>
-    <header>
-        <nav id="navBar">
-            <img src="../images/xxx.svg" alt="">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="imagenes.html">Imágenes</a></li>
-                <li><a href="conocenos.html">Acerca de</a></li>
-                <li><a href="#">Shows</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <br><br><br><br><br>
+  <header>
+    <nav id="navBar">
+      <input type="checkbox" id="menuToggle" class="menu-toggle">
+      <label for="menuToggle" class="menu-icon"></label>
+      <img src="../images/xxx.svg" alt="">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="imagenes.html">Imágenes</a></li>
+        <li><a href="conocenos.html">Acerca de</a></li>
+        <li><a href="#">Shows</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <br><br><br><br><br>
 
 
-    <!--ESTRUCTURA #2 / MAIN/SECTIONS-ARTICLES-DIVS-ASIDES-->
-    <main>
-        <section>
-            <h1>Shows</h1>
-        </section>
-<br><br>
-        <!-- TABLAS -->
-        <table border="4">
-            <!-- Fila 1 -->
-            <tr> <!-- table row -->
-                <th>BANDA</th>
-                <th>FECHA</th> <!-- table header -->
-                <th>HORARIO</th>
-                <th>LUGAR</th>
-                <th>PRECIO</th>
-            </tr>
-            <!-- Fila 1 -->
-            <tr>
-                <td>I Prevail</td> <!-- Table Data -->
-                <td>21/11/23hs</td>
-                <td>23:00hs</td>
-                <td>Niceto Club</td>
-                <td>$25.000</td>
+  <!--ESTRUCTURA #2 / MAIN/SECTIONS-ARTICLES-DIVS-ASIDES-->
+  <main>
+    <section>
+      <h1>Shows</h1>
+    </section>
+    <br><br>
+    <!-- TABLAS -->
+    <!DOCTYPE html>
+    <html>
 
-            </tr>
+    <head>
+      <title>Tabla de 5 columnas y 3 filas responsiva cada 50px sin usar table</title>
+      <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(5, minmax(50px, 1fr));/ border-collapse: collapse;
+          width: 100%;
+          color: #FFF;
+        }
 
-            <!-- Fila 2 -->
-            <tr>
-                <td>Three Dyas Grace</td> <!-- Table Data -->
-                <td>09/12/23hs</td>
-                <td>22:00hs</td>
-                <td>Estadio Velez Sarfield</td>
-                <td>$30.000</td>
+        .cell {
+          border: 1px solid #000000;
+          padding: 8px;
+          text-align: center;
+        }
 
-            </tr>
+        .header {
+          background-color: #800000;
+          font-weight: bold;
+          color: #000000
+        }
 
-            <tr>
-                <td>Breaking Benjamin</td> <!-- Table Data -->
-                <td>18/12/23hs</td>
-                <td>22:00hs</td>
-                <td>Movistar Arena</td>
-                <td>$30.000</td>
+        @media (max-width: 100px) {
+          .grid-container {
+            grid-template-columns: 20fr;
+          }
+        }
+      </style>
+    </head>
 
-            </tr>
-        </table>
-        <br>
+    <body>
 
+      <!-- Filas -->
 
-        <p>Seleccione show:</p>
-        <select name="Vuelo" id="vuelo">
-            <option value="1">I Previal</option>
-            <option value="2">Three Days Grace</option>
-            <option value="3">Breaking Benjamin</option>
-        </select>
-<br><br>
-        <p>Cantidad de entradas:</p>
-        <select name="Vuelo" id="vuelo">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
+      <div class="grid-container">
+        <div class="cell header">BANDA</div>
+        <div class="cell header">FECHA</div>
+        <div class="cell header">HORARIO</div>
+        <div class="cell header">LUGAR</div>
+        <div class="cell header">PRECIO</div>
 
-        <input type="submit" value="Comprar">
-    </main>
+        <div class="cell">I Prevail</div>
+        <div class="cell">25/11/23</div>
+        <div class="cell">22:00hs</div>
+        <div class="cell">Estadio River Plate</div>
+        <div class="cell">$30.000</div>
 
-    <!--ESTRUCTURA #3 / FOOTER-->
-    <footer>
+        <div class="cell">Three Days Grace</div>
+        <div class="cell">12/12/23</div>
+        <div class="cell">23:00hs</div>
+        <div class="cell">Estadio Obras Sanitarias</div>
+        <div class="cell">$42.000</div>
 
-    </footer>
+        <div class="cell">Breaking Benjamin</div>
+        <div class="cell">03/01/24</div>
+        <div class="cell">22:30hs</div>
+        <div class="cell">Estadio Velez Sarfield</div>
+        <div class="cell">$40.000</div>
+      </div>
+
+    </body>
+
+    </html>
+
+    <br>
+    <form action="">
+      <p>Seleccione show:</p>
+      <select name="Vuelo" id="vuelo">
+        <option value="1">I Previal</option>
+        <option value="2">Three Days Grace</option>
+        <option value="3">Breaking Benjamin</option>
+      </select>
+      <br><br>
+      <p>Cantidad de entradas:</p>
+      <select name="Vuelo" id="vuelo">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <input type="submit" value="Comprar">
+    </form>
+  </main>
+
+  <!--ESTRUCTURA #3 / FOOTER-->
+
+  <footer>
+    <section class="footer__redes">
+      <h2>Redes</h2>
+      <img src="images/fb.svg" alt="fb">
+      <img src="images/iig.svg" alt="ig">
+      <img src="images/wsp.svg" alt="wpp">
+      <img src="images/xxx.svg" alt="tw">
+    </section>
+  </footer>
+
 </body>
 
 </html>

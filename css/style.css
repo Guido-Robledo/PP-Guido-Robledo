@@ -22,10 +22,11 @@ header nav {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: brown;
+  background-color: #800000;
   align-items: center;
   display: flex;
   justify-content: space-around;
+
 }
 
 header nav ul li {
@@ -33,6 +34,7 @@ header nav ul li {
   font-size: 30px;
   margin: 25px;
   transition: 0.2s;
+  color: #000000;
 }
 
 #navBar {
@@ -41,7 +43,7 @@ header nav ul li {
 }
 
 #navBar ul :hover {
-  color: aqua;
+  color: #FFF;
   font-size: 35px;
   transition: 0.2s;
 }
@@ -52,7 +54,7 @@ header nav ul li {
 
 .banner__titulo {
   text-align: center;
-  color: blue;
+  color:  #FFF;
 }
 
 #banner img {
@@ -63,11 +65,11 @@ header nav ul li {
 }
 
 h2 {
-  color: red;
+  color: #FF0000;
 }
 
 #servicios {
-  background-color: grey;
+  background-color:  #808080;
 }
 
 #servicios h2 {
@@ -82,7 +84,7 @@ h2 {
 #servicios article {
   width: 100px;
   height: 100px;
-  background-color: white;
+  background-color: #FFFFFF;
   margin: 20px;
   border-radius: 30px;
   text-align: center;
@@ -99,11 +101,12 @@ h2 {
 .footer__redes {
   bottom: 0;
   right: 0;
-  background-color: #333; /* Color de fondo del footer */
-  color: #fff; /* Color del texto del footer */
+  background-color: #333;
+  color: #fff; 
   padding: 20px;
   display: flex;
   justify-content: flex-end;
+  margin-top: 208px; 
 }
 
 #banner .banner__contenido {
@@ -201,6 +204,7 @@ h2 {
   grid-template-rows: repeat(2, 200px);
   grid-template-areas: "ImgBreak1 ImgBreak2 ImgBreak3 ImgBreak4" "ImgBreak5 ImgBreak6 ImgBreak7 ImgBreak8";
   gap: 20px;
+  
 }
 
 .tamañobox {
@@ -210,7 +214,7 @@ h2 {
 .tamañobox h1 {
   position: absolute;
   bottom: 0;
-  color: wheat;
+  color:  #FFF5E1;
   width: 100%;
   text-align: center;
 }
@@ -257,6 +261,8 @@ h2 {
   overflow: scroll;
 }
 
+
+
 @media (max-width: 768px) {
   #fotosBreak {
     grid-template-columns: 2, 1fr;
@@ -275,11 +281,106 @@ h2 {
   max-width: 80%;
 }
 
-@media (max-width: 640px) {
-  #navBar {
-    width: 778px;
-    height: 84px;
+
+
+main{
+  color: #FFF;
+}
+
+
+ @media (max-width: 791px) {
+  #navBar ul li{
+   font-size: 25px;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 707px) {
+  #navBar ul li{
+    font-size: 22px;
+  }
+}
+
+/*@media (max-width: 643px) {
+  #navBar ul li{
+    font-size: 20px;
+  }
+} */
+
+/* Estilos para el icono del menú hamburguesa */
+.menu-icon {
+  display: none; /* Ocultar el icono del menú por defecto */
+  cursor: pointer;
+  width: 76px;
+  height: 76px;
+  position: relative;
+}
+
+.menu-icon:before,
+.menu-icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:before {
+  top: 0;
+  transform-origin: center top;
+}
+
+.menu-icon:after {
+  bottom: 0;
+  transform-origin: center bottom;
+}
+
+#menuToggle:checked ~ .menu-icon:before {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+#menuToggle:checked ~ .menu-icon:after {
+  transform: rotate(45deg);
+  bottom: 50%;
+}
+
+
+@media (max-width: 655px) {
+
+    /* Ocultar la checkbox */
+    #menuToggle {
+      display: none;
+    }
+  
+    /* Mostrar el icono del menú */
+    .menu-icon {
+      display: block;
+    }
+  
+  /* Ocultar la lista de navegación por defecto */
+  #navBar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+  }
+
+  /* Mostrar el icono del menú */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Mostrar la lista de navegación al hacer clic en el icono del menú */
+  #menuToggle:checked ~ ul {
+    display: block;
+  }
+}
