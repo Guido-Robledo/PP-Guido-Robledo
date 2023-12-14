@@ -6,7 +6,7 @@
   <!--METAS SEO-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
 
   <!--TÍTULO DEL DOCUMENTO-->
@@ -16,7 +16,6 @@
 <body>
   <header>
     <nav id="navBar">
-      <input type="checkbox" id="menuToggle" class="menu-toggle">
       <label for="menuToggle" class="menu-icon"></label>
       <img src="../images/xxx.svg" alt="">
       <ul>
@@ -42,12 +41,13 @@
     <!DOCTYPE html>
     <html>
 
-    <head>
+    <head id="grilla">
       <title>Tabla de 5 columnas y 3 filas responsiva cada 50px sin usar table</title>
       <style>
         .grid-container {
           display: grid;
-          grid-template-columns: repeat(5, minmax(50px, 1fr));/ border-collapse: collapse;
+          grid-template-columns: repeat(5, minmax(50px, 1fr));
+          border-collapse: collapse;
           width: 100%;
           color: #FFF;
         }
@@ -132,13 +132,15 @@
 
   <footer>
     <section class="footer__redes">
-      <h2>Redes</h2>
-      <img src="images/fb.svg" alt="fb">
-      <img src="images/iig.svg" alt="ig">
-      <img src="images/wsp.svg" alt="wpp">
-      <img src="images/xxx.svg" alt="tw">
+        <h2>Redes</h2>
+        <a href="">
+        <img src="../images/fb.svg" alt="fb">
+        <img src="../images/iig.svg" alt="ig">
+        <img src="../images/wsp.svg" alt="wpp">
+        <img src="../images/xxx.svg" alt="tw">
+    </a>
     </section>
-  </footer>
+</footer>
 
 </body>
 

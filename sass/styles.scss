@@ -1,0 +1,18 @@
+@import "navBar";
+@import "imagenes";
+@import "index";
+@import "footer";
+@import "mediaQueries";
+@import "contacto";
+@import "conocenos";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*a {
+  text-decoration: none;
+  color: #ffffff;
+}
