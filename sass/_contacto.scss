@@ -1,47 +1,64 @@
-#formulario{
-    text-align: center;
+#formulario {
+  text-align: center;
 }
 
-#tituloContacto{
-    text-align: center;
-    font-size: 50px;
-    margin-top: 11px;
-    margin-bottom: 100px;
+#tituloContacto {
+  margin-bottom: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 30px;
 }
 
-#textoContacto{
-    text-align: center;
-    margin-bottom: 30px;
+#textoContacto {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 //footer
 .footer__redez img {
-    width: 50px;
-    height: 50px;
-    margin: 30px;
-  }
-  
-  .footer__redez {
-  
-    bottom: 0; 
-    right: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%; 
-    box-sizing: border-box;
-    margin-top: 310px
-  }
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+}
 
-  #botones{
-    display: flex;
-    justify-content: center; /* Centra horizontalmente los elementos */
-    align-items: center; 
-  }
+.footer__redez {
 
-  .boton{
-    margin: 10px;
-    
-  }
+  bottom: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 310px
+}
+
+#botones {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente los elementos */
+  align-items: center;
+}
+
+.boton1 {
+  margin: 10px;
+  background-color: rgba(153, 255, 0, 0.582);
+
+}
+
+.boton2 {
+  background-color: rgba(255, 0, 0, 0.628);
+
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cajas {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style:italic;
+}

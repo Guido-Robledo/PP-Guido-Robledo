@@ -1,0 +1,75 @@
+.footer__redessss img {
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+  }
+  
+  .footer__redessss {
+  
+    bottom: 0; 
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; 
+    box-sizing: border-box;
+    margin-top: 310px
+  }
+
+  #form{
+    margin-top: 100px;
+    text-align: center;
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
+    border-collapse: collapse;
+    width: 100%;
+    color: #FFF;
+  }
+
+  .cell {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .header {
+    background-color: #800000;
+    font-weight: bold;
+    color: #000000
+  }
+
+  @media (max-width: 100px) {
+    .grid-container {
+      grid-template-columns: 20fr;
+    }
+  }
+
+  h4{
+    text-align: center;
+  }
+
+  .comprar{
+background-color: rgba(153, 255, 0, 0.628);
+  }
+
+  .vuelo1{
+margin-top: 60px;
+  }
+
+  #vuelo1{
+    margin: 10px;
+  }
+
+  .showsTitulo{
+    margin-bottom: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 30px;
+  }

@@ -171,18 +171,22 @@ header nav ul li {
 
 .ImgBreak5 {
   grid-area: ImgBreak5;
+  margin-top: 100px;
 }
 
 .ImgBreak6 {
   grid-area: ImgBreak6;
+  margin-top: 100px;
 }
 
 .ImgBreak7 {
   grid-area: ImgBreak7;
+  margin-top: 100px;
 }
 
 .ImgBreak8 {
   grid-area: ImgBreak8;
+  margin-top: 100px;
 }
 
 .titlebb {
@@ -221,6 +225,21 @@ header nav ul li {
 #descpImagenes {
   margin-bottom: 25px;
   text-align: center;
+}
+
+* {
+  margin: 20;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body {
+  font-family: "Verdana", sans-serif;
 }
 
 body {
@@ -382,10 +401,11 @@ main {
 }
 
 #tituloContacto {
-  text-align: center;
-  font-size: 50px;
-  margin-top: 11px;
   margin-bottom: 100px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 30px;
 }
 
 #textoContacto {
@@ -414,12 +434,28 @@ main {
 
 #botones {
   display: flex;
-  justify-content: center; /* Centra horizontalmente los elementos */
+  justify-content: center;
+  /* Centra horizontalmente los elementos */
   align-items: center;
 }
 
-.boton {
+.boton1 {
   margin: 10px;
+  background-color: rgba(153, 255, 0, 0.582);
+}
+
+.boton2 {
+  background-color: rgba(255, 0, 0, 0.628);
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.cajas {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
 }
 
 #historia {
@@ -428,6 +464,7 @@ main {
   width: 100%;
   height: 100%;
   line-height: 200%;
+  margin-top: 100px;
 }
 
 .footer__redesss img {
@@ -447,6 +484,14 @@ main {
   width: 100%;
   box-sizing: border-box;
   margin-top: 310px;
+}
+
+.sobre {
+  margin-bottom: 100px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 30px;
 }
 
 .footer__redessss img {
@@ -470,21 +515,56 @@ main {
 
 #form {
   margin-top: 100px;
+  text-align: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(50px, 1fr));
+  border-collapse: collapse;
+  width: 100%;
+  color: #FFF;
 }
 
-* a {
-  text-decoration: none;
-  color: #ffffff;
+.cell {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: center;
 }
 
-body {
-  font-family: "Verdana", sans-serif; /* Cambia "Arial" por la fuente que desees */
+.header {
+  background-color: #800000;
+  font-weight: bold;
+  color: #000000;
+}
+
+@media (max-width: 100px) {
+  .grid-container {
+    grid-template-columns: 20fr;
+  }
+}
+h4 {
+  text-align: center;
+}
+
+.comprar {
+  background-color: rgba(153, 255, 0, 0.628);
+}
+
+.vuelo1 {
+  margin-top: 60px;
+}
+
+#vuelo1 {
+  margin: 10px;
+}
+
+.showsTitulo {
+  margin-bottom: 100px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

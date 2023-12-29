@@ -11,6 +11,8 @@
         content="En esta pagina encontrarás toda la informacion sobre shows a por venir de metal en la ciudad de Buenos Aires, Argentina.">
     <meta name="copyright" content="Guido Robledo">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../icons/icono.ico">
+
 
 
     <!--TÍTULO DEL DOCUMENTO-->
@@ -33,13 +35,13 @@
             </ul>
         </nav>
     </header>
-    <br><br><br><br><br><br>
+
 
 
     <!--ESTRUCTURA #2 / MAIN/SECTIONS-ARTICLES-DIVS-ASIDES-->
     <main>
-        <p id="tituloContacto">Contacto</p>
-        <br>
+        <p id="tituloContacto">CONTACTO</p>
+
         <p id="textoContacto">Dejanos tus datos para recibir las ultimas novedades, descuento, y mucho mas sobre shows
             de metal en Buenos Aires!, agradecemos opiniones y recomendaciones.
         </p>
@@ -47,27 +49,18 @@
 
             <article id="formulario">
                 <form action="#">
-                    <input type="text" placeholder="Nombre"> <!-- Campo de texto -->
-                    <!-- Campo de texto -->
-                    <label for="email">
+                    <div class="cajas">
+                        <input id="nombre" type="text" placeholder="Nombre">
+                        <input id="mail" type="email" placeholder="Email">
+                    </div>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje!"></textarea>
+                   
 
+                    <section id="botones">
+                        <input class="boton1" type="submit" value="Enviar">
 
-                        <input type="email" placeholder="Email">
-                    </label>
-                    <br>
-                    <br>
-                    <label for="mensaje">
-                        Mensaje:
-                    </label>
-                    <br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                    <br>
-                    <br>
-            <section id="botones">
-                    <input class="boton" type="submit" value="Enviar">
-                    <br><br>
-                    <input class="boton" type="reset" value="Borrar">
-                </section>
+                        <input class="boton2" type="reset" value="Borrar">
+                    </section>
                 </form>
             </article>
         </section>
@@ -75,16 +68,14 @@
 
     <!--ESTRUCTURA #3 / FOOTER-->
 
-    <footer>
-        <section class="footer__redez">
-            <h2>Redes</h2>
-            <a href="">
-                <img src="../images/fb.svg" alt="fb">
-                <img src="../images/iig.svg" alt="ig">
-                <img src="../images/wsp.svg" alt="wpp">
-                <img src="../images/xxx.svg" alt="tw">
-            </a>
-        </section>
+    <footer class="footer__redez">
+        <h2>Redes</h2>
+        <div>
+            <img src="../images/fb.svg" alt="fb">
+            <img src="../images/iig.svg" alt="ig">
+            <img src="../images/wsp.svg" alt="wpp">
+            <img src="../images/xxx.svg" alt="tw">
+        </div>
     </footer>
 
 </body>
